@@ -1,0 +1,17 @@
+{
+    "configurations": [
+        {
+            "type": "lldb",
+            "request": "launch",
+            "program": "${workspaceFolder}/output/${fileBasenameNoExtension}",
+            "name": "LLDBDebug"
+        },
+/*         {
+            "name": "CMake: CMake Script",
+            "type": "cmake",
+            "request": "launch",
+            "cmakeDebugType": "script",
+            "scriptPath": "${file}"
+        } */
+    ]
+}
