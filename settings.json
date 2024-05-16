@@ -1,0 +1,66 @@
+{
+    "security.workspace.trust.untrustedFiles": "open",
+    "editor.detectIndentation": false,
+    "window.titleBarStyle": "custom",
+    "workbench.editor.enablePreview": false,
+    "editor.renderWhitespace": "none",
+    "zenMode.centerLayout": false,
+    "zenMode.hideLineNumbers": false,
+    "breadcrumbs.enabled": false,
+    "zenMode.showTabs": "none",
+    "editor.scrollBeyondLastLine": false,
+    "editor.smoothScrolling": true,
+    "terminal.integrated.enableMultiLinePasteWarning": "never",
+    "security.allowedUNCHosts": [
+        "wsl.localhost"
+    ],
+    "window.customTitleBarVisibility": "windowed",
+    "[cpp]": {
+        "editor.defaultFormatter": "llvm-vs-code-extensions.vscode-clangd"
+    },
+    "[c]": {
+        "editor.defaultFormatter": "llvm-vs-code-extensions.vscode-clangd"
+    },
+    "editor.unicodeHighlight.ambiguousCharacters": false,
+    "settingsSync.ignoredSettings": [
+        "-clangd.path"
+    ],
+    "c-cpp-compile-run.c-compiler": "clang",
+    "c-cpp-compile-run.cpp-compiler": "clang++",
+    "workbench.iconTheme": "material-icon-theme",
+    "cmake.showOptionsMovedNotification": false,
+    "cmake.configureOnOpen": true,
+    "editor.codeActionsOnSave": {},
+    "editor.fontSize": 17,
+    "editor.minimap.showSlider": "always",
+    "terminal.integrated.profiles.windows": {
+        "PowerShell": {
+            "source": "PowerShell", //一般推荐使用powershell
+            "overrideName": true,
+            "args": [
+                "-NoExit",
+                "/c",
+                "chcp 65001"
+            ],
+            "icon": "terminal-powershell",
+            "env": {
+                "TEST_VAR": "value"
+            }
+        }
+    },
+    "terminal.integrated.defaultProfile.windows": "PowerShell",
+    "workbench.layoutControl.enabled": false,
+    "remote.SSH.remotePlatform": {
+        "Arch": "linux"
+    },
+    "launch": {
+        "configurations": [
+            {
+                "type": "lldb",
+                "request": "launch",
+                "program": "${workspaceFolder}/output/${fileBasenameNoExtension}",
+                "name": "LLDBDebug"
+            }
+        ]
+    }
+}
