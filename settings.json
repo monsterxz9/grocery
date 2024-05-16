@@ -58,7 +58,7 @@
             {
                 "type": "lldb",
                 "request": "launch",
-                "program": "${workspaceFolder}/output/${fileBasenameNoExtension}",
+                "program": "${fileDirname}/output/${fileBasenameNoExtension}",
                 "name": "LLDBDebug"
             }
         ]
